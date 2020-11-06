@@ -1,0 +1,12 @@
+no wireless interfaces found
+this indicates wireless driver is `not working`
+
+solution:go to /etc/network/interfaces.d and check whether the configs contains below
+```
+auto wlan0              // crutial without it the wifi module won't work
+allow-hotplug wlan0     //the same crutial
+iface eth0 inet manual  //idk why,in my case,wlan0 won't work when this set to dhcp
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf  //hot point configrations
+```
+
+at last don't forget to config ip,route,dns
