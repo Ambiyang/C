@@ -17,3 +17,6 @@ PC may not recognize tf card,use DiskGenius to create division again,problem set
 (reference 
 how to reinstall os https://www.jianshu.com/p/6af60049fdf1
 PC do not recognize problem https://blog.csdn.net/jin16879/article/details/51622001)
+
+--`THIS IS CRITICAL`
+noobs files shall be copied to tf card without root file or raspi won't boot
