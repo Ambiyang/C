@@ -1,0 +1,4 @@
+# Error ocurs when install py3
+##  Ignoring ensurepip failure: pip 8.1.1 requires SSL/TLS
+try sudo apt install -y libssl1.0-dev
+
