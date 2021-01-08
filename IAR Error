@@ -1,0 +1,13 @@
+Building configuration: STM32L496ZGTxP2 - STM32L496ZGTxP2 
+
+Updating build tree... 
+
+startup_stm32l496xx.s 
+
+Error[438]: This instruction is not available in the selected cpu/core F:\Work\STM32L496ZGTxP2\EWARM\startup_stm32l496xx.s 189 
+
+I also faced similar problem but for another controller.
+The problem was with wrong setting of core. It worked after selecting proper controller.
+This you can find under Project ->Options->General Options->Target
+You can check what core(in your case it will be Cortex-M4 core) or device selected(STM32L496ZG).
+
