@@ -20,3 +20,10 @@ PC do not recognize problem https://blog.csdn.net/jin16879/article/details/51622
 
 --`THIS IS CRITICAL`
 noobs files shall be copied to tf card without root file or raspi won't boot
+
+
+### raspi telnet
+1.  sudo apt-get install openbsd-inetd
+2.  sudo apt-get install telnetd
+3.  sudo /etc/init.d/openbsd-inetd restart
+4.  netstat -a | grep telnet
